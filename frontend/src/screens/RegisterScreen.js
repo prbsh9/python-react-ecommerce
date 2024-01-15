@@ -1,6 +1,7 @@
 // Register.js
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import axios from "axios";
 
 const RegisterScreen = () => {
   const [username, setUsername] = useState("");
@@ -19,17 +20,21 @@ const RegisterScreen = () => {
     setPassword(e.target.value);
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Handle registration logic here
-  };
+  async function handleRegister() {
+    try {
+      const response = await axios.get("http://127.0.0.1:8000/api/users/");
+      console.log(response);
+    } catch (error) {
+      console.log(error);
+    }
+  }
 
   return (
     <div className="register">
       <div className="register-container">
         <div className="register-box">
           <h2 className="register-title">Create an Account</h2>
-          <form className="register-form" onSubmit={handleSubmit}>
+          <form className="register-form" onSubmit={handleRegister}>
             <input
               type="text"
               placeholder="Username"

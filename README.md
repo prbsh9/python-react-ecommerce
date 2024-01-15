@@ -32,10 +32,14 @@ To set up the backend development environment and run the server locally, follow
 
 ## Contributing
 
-Contributions are welcome! If you find issues or want to improve the website, feel free to create pull requests or report issues in the repository's issue tracker.
+Coming Soon...
 
-## License
+## Plans:
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+- [x] Create Products model, populate and serialize it::: simple
+- [x] Create simple api views, urls and make it read only::: class views
+- [x] Connect backend with frontend::: cors, axios request
+- [ ] Login, Logout, Register feature both ends::: JWT?
+- [ ] User Profile, Cart, Buy Now etc feature.
 
 Happy coding!

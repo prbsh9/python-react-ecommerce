@@ -347,3 +347,10 @@
 .buy-now-button:hover {
   background-color: #e68307;
 }
+
+/* My specific styles */
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
